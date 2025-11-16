@@ -145,7 +145,7 @@ document.getElementById("confirmar-assentos").addEventListener("click", () => {
 
     salvarIngressoTemp(assentos);
 
-    alert("Assentos confirmados:", assentos);
+    
 });
 
 //localStorage
@@ -164,7 +164,7 @@ function salvarIngressoTemp(assentos) {
         alert("Nenhum usuário logado!");
         return;
     }
-
+    alert("Assentos confirmados:", assentos);
     usuarioLogado.ingressos.push(ingressoTemp);
 
     localStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado));
