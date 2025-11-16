@@ -1,0 +1,142 @@
+
+html, body {
+    overflow-x: hidden;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  min-height: 100vh;           
+  display: flex;
+  flex-direction: column;      
+  background-color: var(--cor03);
+  padding-top: var(--header-h); 
+  padding-left: var(--sidebar-w); 
+}
+.fh1{
+  text-align: center;
+  font-size: 2em;
+  color: var(--cor01);
+}
+.h2titulo{
+  text-align: center;
+  background-color: var(--cor01);
+  color: white;
+  border-radius: 20px;
+  margin: auto;
+  width: 20%;
+}
+.filmes {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.fil-poster {
+  position: relative;
+}
+.filmes img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.filmes:hover{
+  transform: scale(1.02);
+}
+.fil-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fil-sinopse{
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fil-extra {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #666;
+}
+.sess {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  color: #444;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.sess h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #0D204B;
+}
+.sess h6 {
+  margin: 8px 0 3px;
+  font-size: 14px;
+  color: #091635;
+  border-bottom: 1px solid #ddd;
+}
+.sess p {
+  margin: 3px 0;
+  padding-left: 8px;
+}
+.sess p::before {
+  content: "🎬 ";
+}
+main{
+    background-color: var(--cor03);
+    padding: 3% 0%;
+    border: 0px;
+    margin-top: 45px;
+}
+main h1{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+.sess-conteudo {
+  display: none; 
+}
+
+
+.sess-conteudo.ativo {
+    
+    display: block; 
+}
+
+
+.sess h4 {
+    cursor: pointer;
+    user-select: none; 
+}
+
+@media (max-width: 768px) {
+    .filmes {
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;     
+    }
+    .filmes img {
+        width: 100%;            
+        height: auto;           
+        max-width: 300px;       
+    }
+    .fil-info {
+        padding-top: 20px;      
+    }
+}

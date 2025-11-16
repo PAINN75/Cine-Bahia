@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="style/login.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Cine Bahia</title>
+</head>
+<body>
+    <header>
+  <button class="menu-btn" onclick="abrirMenu()">☰</button>
+  <h1><img src="../imgs/Icon.png" alt="logo"> CINE BAHIA</h1>
+</header>
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <span class="logo">🎬 CINEBAHIA</span>
+    <button class="close-btn" onclick="fecharMenu()">×</button>
+  </div>
+  <ul>
+    <li><a href="../index.html">🏠 Home</a></li>
+    <li><a href="../filmes/filmes.html">🎞️ Filmes</a></li>
+    <li><a href="../ingressos/ingressos.html">🎟️ Ingressos</a></li>
+    <li><a href="#contato">📩 Contatos</a></li>
+    <li><a href="login.html"> 👤 Login</a></li>
+  </ul>
+  <div class="sidebar-footer">
+    <p>© 2025 CINEBAHIA</p>
+  </div>
+</nav>
+    <main>
+    <section class="container">
+            <form>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <label for="email" class="sr-only">Usuário</label>
+                    <input id="email" name="email" placeholder="Usuário" type="email" />
+                    <i class="bx bxs-user" aria-hidden="true"></i>
+                </div>
+                <div class="input-box">
+                    <label for="senha" class="sr-only">Senha</label>
+                    <input id="senha" name="password" placeholder="Senha" type="password" />
+                    <i class="bx bxs-lock-alt" aria-hidden="true"></i>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" name="remember" />
+                        Lembrar a Senha
+                    </label>
+                    <a href="#">Esqueci a Senha</a>
+                </div>
+                <button type="submit" class="login">Login</button>
+                <div class="register">
+                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape" id="contato">
+    <div class="rodape-div">
+        <div class="rodape-div-1">
+            <div class="rodape-div-1-coluna">
+
+                <span><b>Cine Bahia</b></span>
+                <p>Av. Maria Quitéria, 2116 - Centro, Feira de Santana - BA</p>
+            </div>
+        </div>
+        <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+
+                <span><b>Contatos</b></span>
+                <p>ouvidoria@unifan.net.br</p>
+                <p>+55 4002-8922</p>
+            </div>
+        </div>
+        <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+                <span><b>Links</b></span>
+                <p><a href="#servicos">Serviços</a></p>
+                <p><a href="#empresa">Empresa</a></p>
+                <p><a href="#sobre">Sobre</a></p>
+            </div>
+        </div>
+        <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+                <span><b>Outros</b></span>
+                <p>Políticas de Privacidade</p>
+            </div>
+        </div>
+    </div>
+    <p class="rodape-direitos">Copyright © 2025 – Todos os Direitos Reservados.</p>
+</footer>
+    <script src="../script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

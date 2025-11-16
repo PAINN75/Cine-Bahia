@@ -1,0 +1,222 @@
+/* --- Estrutura Geral --- */
+.container {
+    max-width: 1200px; /* Limita a largura central do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 40px 20px;
+}
+
+/* --- Detalhes do Filme --- */
+.filme-header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+.filme-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0D204B; /* Dourado */
+}
+
+.filme-info-container {
+    display: flex;
+    gap: 30px;
+}
+
+.poster-coluna {
+    flex: 0 0 300px; /* Largura fixa para o poster */
+    text-align: center;
+}
+
+.filme-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.classificacao-etaria {
+    background-color: black; /* Vermelho */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.sinopse-coluna {
+    flex-grow: 1; /* Ocupa o espaço restante */
+}
+
+.sinopse-coluna h2 {
+    color: #0D204B; /* Verde */
+    margin-top: 20px;
+    border-bottom: 1px solid #0D204B;
+    padding-bottom: 5px;
+}
+
+.sinopse-texto {
+    line-height: 1.6;
+    color: black;
+}
+
+/* --- Responsividade (Para telas pequenas) --- */
+@media (max-width: 768px) {
+    .filme-info-container {
+        flex-direction: column; /* Pilha a imagem e a sinopse em telas pequenas */
+        text-align: center;
+    }
+
+    .poster-coluna {
+        flex: auto;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* --- Seleção de Data e Horário --- */
+.secao-titulo {
+    color: #0D204B;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.datas-disponiveis {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Garante que os botões quebrem a linha se necessário */
+}
+
+.data-btn {
+    background-color: #333;
+    color: white;
+    border: 2px solid #555;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.data-btn:hover {
+    background-color: #555;
+}
+
+.data-btn.active {
+    background-color: #4CAF50; /* Cor ativa */
+    border-color: #388e3c;
+    font-weight: bold;
+}
+
+/* --- Blocos de Sala e Horários --- */
+.bloco-sala {
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.sala-cabecalho {
+    padding: 15px;
+    color: white;
+}
+
+.tipo-2d {
+    background-color: #1b3e8f; /* Azul para 2D */
+}
+
+.tipo-3d {
+    background-color: #1b3e8f; /* Vermelho para 3D/VIP */
+}
+
+.horarios-lista {
+    padding: 20px;
+    background-color: #222;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.horario-btn {
+    text-decoration: none;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.horario-btn:hover {
+    background-color: #388e3c;
+}
+
+.horario-btn.esgotado {
+    background-color: #777;
+    cursor: not-allowed;
+    pointer-events: none; /* Impede o clique */
+}
+/* ===== Modal de Assentos ===== */
+    .modal-assentos {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-conteudo {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      width: 400px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      animation: fadeIn 0.3s ease;
+    }
+
+    .assentos-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .assento {
+      width: 50px;
+      height: 50px;
+      background: #e0e0e0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .assento:hover {
+      background: #d1d1d1;
+    }
+
+    .assento.selecionado {
+      background: #007bff;
+      color: #fff;
+    }
+
+    .fechar {
+      float: right;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }

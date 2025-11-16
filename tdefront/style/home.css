@@ -1,0 +1,172 @@
+
+main{
+    background-color: var(--cor03);
+    padding: 6% 0%;
+    border: 0px;
+    margin-top: 45px; 
+}
+main h1{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.carrossel {
+  width: 90%;
+  margin: 0% 4.5% 6% 4.5%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.carrossel-filmes :hover{
+  transform: scale(1.02);
+}
+.carrossel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carrossel-filmes {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+.filme {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px solid;
+}
+
+.filme img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.filme img:hover{
+  transform: scale(1.05);
+}
+
+.filme .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  border-radius: 10px;
+}
+
+
+.filme .texto-filme {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: #fff;
+  text-align: left;
+}
+
+.filme .texto-filme h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.filme .texto-filme p {
+  font-size: 13px;
+  margin: 3px 0 0;
+  line-height: 1.2;
+}
+
+.filme img:hover {
+  transform: scale(1.05);
+}
+
+.seta {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.seta.esquerda {
+  left: 10px;
+}
+
+.seta.direita {
+  right: 10px;
+}
+.ess h5, p{
+  color: white;
+}
+section .ess{
+  padding-bottom: 7%;
+  
+}
+.carousel-inner{
+  box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.65);
+}
+#carouselExampleDark{
+  max-width: 100vh;
+  min-width: 45vh;
+  margin: auto;
+  text-align: center;
+}
+.esstitulos h1{
+    color: var(--cor01);
+    text-align: center;
+}
+.esstitulos p{
+    color: grey;
+    text-align: center;
+}
+.sobre-cinebahia {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa; 
+}
+
+.container-sobre {
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  text-align: center;
+}
+
+.container-sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.container-sobre p {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.container-sobre p.destaque {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 25px;
+}
+

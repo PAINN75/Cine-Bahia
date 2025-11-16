@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="compra.css">
+    <title>Comprar Ingressos - Cine Bahia</title>
+</head>
+
+<body>
+
+    <header>
+        <button class="menu-btn" onclick="abrirMenu()">☰</button>
+        <h1> <img src="../imgs/Icon.png" alt="logo"> CINE BAHIA</h1>
+    </header>
+    <nav id="sidebar" class="sidebar">
+    </nav>
+
+    <main id="conteudo">
+        <section class="container-compra">
+            <h2>Reserva de Ingressos</h2>
+
+            <div class="info-sessao">
+                <h3>Filme: <span id="filme-titulo">Nome do Filme</span></h3>
+                <p>Sessão: <span id="sessao-info">Data e Hora</span></p>
+                <p>Preço Unitário: R$ <span id="preco-ingresso">0.00</span></p>
+            </div>
+
+            <div class="legenda-container">
+                <p>Legenda:</p>
+                <ul class="legenda">
+                    <li>
+                        <div class="assento-icone livre"></div> Livre
+                    </li>
+                    <li>
+                        <div class="assento-icone ocupado"></div> Ocupado
+                    </li>
+                    <li>
+                        <div class="assento-icone selecionado"></div> Selecionado
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tela-cinema">TELA</div>
+
+            <div id="mapa-assentos" class="mapa-assentos-container">
+            </div>
+
+            <div class="resumo-compra">
+                <h4>Seu Pedido</h4>
+                <p>Assentos selecionados: <span id="total-assentos">0</span></p>
+                <p class="total">Total a Pagar: R$ <span id="total-pagar">0.00</span></p>
+                <button id="btn-comprar" class="btn-principal" disabled>Confirmar Compra</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="../../script.js"></script>
+    <script src="compra.js"></script>
+
+</body>
+
+</html>
