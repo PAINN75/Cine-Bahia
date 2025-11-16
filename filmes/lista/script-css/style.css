@@ -1,11 +1,11 @@
-/* --- Estrutura Geral --- */
+
 .container {
-    max-width: 1200px; /* Limita a largura central do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 1200px; 
+    margin: 0 auto;
     padding: 40px 20px;
 }
 
-/* --- Detalhes do Filme --- */
+
 .filme-header {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -16,7 +16,7 @@
 .filme-titulo {
     text-align: center;
     margin-bottom: 30px;
-    color: #0D204B; /* Dourado */
+    color: #0D204B; 
 }
 
 .filme-info-container {
@@ -25,7 +25,7 @@
 }
 
 .poster-coluna {
-    flex: 0 0 300px; /* Largura fixa para o poster */
+    flex: 0 0 300px; 
     text-align: center;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .classificacao-etaria {
-    background-color: black; /* Vermelho */
+    background-color: black; 
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -47,11 +47,11 @@
 }
 
 .sinopse-coluna {
-    flex-grow: 1; /* Ocupa o espaço restante */
+    flex-grow: 1; 
 }
 
 .sinopse-coluna h2 {
-    color: #0D204B; /* Verde */
+    color: #0D204B; 
     margin-top: 20px;
     border-bottom: 1px solid #0D204B;
     padding-bottom: 5px;
@@ -62,10 +62,10 @@
     color: black;
 }
 
-/* --- Responsividade (Para telas pequenas) --- */
+
 @media (max-width: 768px) {
     .filme-info-container {
-        flex-direction: column; /* Pilha a imagem e a sinopse em telas pequenas */
+        flex-direction: column; 
         text-align: center;
     }
 
@@ -76,7 +76,7 @@
     }
 }
 
-/* --- Seleção de Data e Horário --- */
+
 .secao-titulo {
     color: #0D204B;
     margin-top: 40px;
@@ -87,7 +87,7 @@
     display: flex;
     gap: 15px;
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Garante que os botões quebrem a linha se necessário */
+    flex-wrap: wrap; 
 }
 
 .data-btn {
@@ -105,12 +105,12 @@
 }
 
 .data-btn.active {
-    background-color: #4CAF50; /* Cor ativa */
+    background-color: #4CAF50; 
     border-color: #388e3c;
     font-weight: bold;
 }
 
-/* --- Blocos de Sala e Horários --- */
+
 .bloco-sala {
     border: 1px solid #444;
     border-radius: 8px;
@@ -125,11 +125,11 @@
 }
 
 .tipo-2d {
-    background-color: #1b3e8f; /* Azul para 2D */
+    background-color: #1b3e8f; 
 }
 
 .tipo-3d {
-    background-color: #1b3e8f; /* Vermelho para 3D/VIP */
+    background-color: #1b3e8f; 
 }
 
 .horarios-lista {
@@ -142,7 +142,7 @@
 
 .horario-btn {
     text-decoration: none;
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     color: white;
     padding: 10px 15px;
     border-radius: 4px;
@@ -157,9 +157,9 @@
 .horario-btn.esgotado {
     background-color: #777;
     cursor: not-allowed;
-    pointer-events: none; /* Impede o clique */
+    pointer-events: none; 
 }
-/* ===== Modal de Assentos ===== */
+
     .modal-assentos {
       display: none;
       position: fixed;
